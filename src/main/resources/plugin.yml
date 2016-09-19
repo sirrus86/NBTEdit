@@ -1,0 +1,4 @@
+name: NBTEdit
+main: me.sirrus86.nbtedit.NBTEdit
+version: ${project.version}
+author: sirrus86
