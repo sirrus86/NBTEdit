@@ -5,23 +5,23 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.bukkit.craftbukkit.v1_10_R1.entity.CraftEntity;
-import org.bukkit.craftbukkit.v1_10_R1.entity.CraftLivingEntity;
+import org.bukkit.craftbukkit.v1_11_R1.entity.CraftEntity;
+import org.bukkit.craftbukkit.v1_11_R1.entity.CraftLivingEntity;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.LivingEntity;
 
 import me.sirrus86.nbtedit.nbt.TagCompound;
-import net.minecraft.server.v1_10_R1.NBTTagByte;
-import net.minecraft.server.v1_10_R1.NBTTagByteArray;
-import net.minecraft.server.v1_10_R1.NBTTagCompound;
-import net.minecraft.server.v1_10_R1.NBTTagDouble;
-import net.minecraft.server.v1_10_R1.NBTTagFloat;
-import net.minecraft.server.v1_10_R1.NBTTagInt;
-import net.minecraft.server.v1_10_R1.NBTTagIntArray;
-import net.minecraft.server.v1_10_R1.NBTTagList;
-import net.minecraft.server.v1_10_R1.NBTTagLong;
-import net.minecraft.server.v1_10_R1.NBTTagShort;
-import net.minecraft.server.v1_10_R1.NBTTagString;
+import net.minecraft.server.v1_11_R1.NBTTagByte;
+import net.minecraft.server.v1_11_R1.NBTTagByteArray;
+import net.minecraft.server.v1_11_R1.NBTTagCompound;
+import net.minecraft.server.v1_11_R1.NBTTagDouble;
+import net.minecraft.server.v1_11_R1.NBTTagFloat;
+import net.minecraft.server.v1_11_R1.NBTTagInt;
+import net.minecraft.server.v1_11_R1.NBTTagIntArray;
+import net.minecraft.server.v1_11_R1.NBTTagList;
+import net.minecraft.server.v1_11_R1.NBTTagLong;
+import net.minecraft.server.v1_11_R1.NBTTagShort;
+import net.minecraft.server.v1_11_R1.NBTTagString;
 
 public class NMSLib extends me.sirrus86.nbtedit.nms.NMSLib {
 
@@ -56,7 +56,7 @@ public class NMSLib extends me.sirrus86.nbtedit.nms.NMSLib {
 						case 3: list.set(i, ((NBTTagInt)tagList.h(i)).e());
 						case 4: list.set(i, ((NBTTagLong)tagList.h(i)).d());
 						case 5: list.set(i, ((NBTTagFloat)tagList.h(i)).i());
-						case 6: list.set(i, ((NBTTagDouble)tagList.h(i)).h());
+						case 6: list.set(i, ((NBTTagDouble)tagList.h(i)).asDouble());
 						case 7: list.set(i, ((NBTTagByteArray)tagList.h(i)).c());
 						case 8: list.set(i, ((NBTTagIntArray)tagList.h(i)).d());
 						case 10: list.set(i, getNBTTagCompound(tagList.h(i)));

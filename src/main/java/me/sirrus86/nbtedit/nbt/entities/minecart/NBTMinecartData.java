@@ -1,6 +1,8 @@
-package me.sirrus86.nbtedit.nbt.entities;
+package me.sirrus86.nbtedit.nbt.entities.minecart;
 
 import org.bukkit.entity.Minecart;
+
+import me.sirrus86.nbtedit.nbt.entities.NBTEntityData;
 
 public class NBTMinecartData extends NBTEntityData {
 

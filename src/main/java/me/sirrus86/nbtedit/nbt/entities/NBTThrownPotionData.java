@@ -6,7 +6,7 @@ import me.sirrus86.nbtedit.nbt.items.NBTItem;
 
 public class NBTThrownPotionData extends NBTThrowableData {
 
-	protected NBTThrownPotionData(ThrownPotion entity) {
+	public NBTThrownPotionData(ThrownPotion entity) {
 		super(entity);
 	}
 	
