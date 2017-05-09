@@ -8,12 +8,11 @@ public class NBTSnowmanData extends NBTLivingEntityData {
 		super(entity);
 	}
 	
-	// TODO - Coming in 1.11
-//	/**
-//	 * 1 or 0 (true/false) - whether it has a pumpkin on its head or not.
-//	 */
-//	public byte getPumpkin() {
-//		return compound.getByte("Pumpkin");
-//	}
+	/**
+	 * 1 or 0 (true/false) - whether it has a pumpkin on its head or not.
+	 */
+	public byte getPumpkin() {
+		return compound.getByte("Pumpkin");
+	}
 
 }

@@ -37,6 +37,13 @@ public class NBTShulkerData extends NBTLivingEntityData {
 	}
 	
 	/**
+	 * Data value of the color of the shulker. Default is 0 (white). Shulkers spawned by eggs or as part of End cities have value 10 (purple).
+	 */
+	public byte getColor() {
+		return compound.getByte("Color");
+	}
+	
+	/**
 	 * Height of the head of the shulker.
 	 */
 	public byte getPeek() {
